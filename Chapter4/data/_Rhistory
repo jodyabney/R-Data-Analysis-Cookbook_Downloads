@@ -1,0 +1,7 @@
+q()
+setwd("C:/Users/AnushreeAT/Desktop/2825/Final Codes/B02825_04_Codes/data")
+dat <- read.csv("rmse-example.csv")
+rmse <- sqrt(mean((dat$price-dat$pred)^2))
+rmse
+plot(dat$price, dat$pred, xlab = "Actual", ylab = "Predicted")
+abline(0, 1)

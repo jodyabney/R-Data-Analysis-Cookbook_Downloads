@@ -1,0 +1,16 @@
+q()
+setwd("C:/Users/AnushreeAT/Desktop/2825/Final Codes/B02825_01_Codes")
+install.packages("jsonlite")
+library(jsonlite)
+dat.1 <- fromJSON("students.json")
+dat.2 <- fromJSON("student-courses.json")
+url <- "http://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote?format$fields=json"
+jsonDoc <- fromJSON(url)
+install.packages("curl")
+library(curl)
+jsonDoc <- fromJSON(url)
+jsonDoc <- fromJSON(url)
+library(jsonlite)
+jsonDoc <- fromJSON(url)
+url <- 'http://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote?format$fields=json'
+jsonDoc <- fromJSON(url)
